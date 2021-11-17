@@ -1,6 +1,23 @@
-# {SimPlatform} connector
+# About bonsai-sim-connector-template
 
-***Replace {SimPlatform} with the name of your simulation platform and fill out this template as described in the markdown files.***
+This is a template for creating [Bonsai Connectors](https://docs.microsoft.com/en-us/autonomous-systems/bonsai-connectors). It can serve
+as a starting point for making a simulation platform work with Bonsai.
+
+> Note that this template assumes you will be developing in Python. Bonsai also supports
+> [Java and TypeScript libraries](https://github.com/microsoft/microsoft-bonsai-api). For those languages, you *can* use this template,
+> but you will need to adjust the Python portions to perform the equivalent operations in the other language.
+
+You can use this template by:
+1. Use GitHub to [create a new repository based on this template](https://github.com/microsoft/bonsai-sim-connector-template/generate). Or
+if you don't prefer to use GitHub you make a copy of the files however you like.
+2. Find and replace {SimPlatform} with the name of the simulation platform for which you are making a connector.
+3. Find and replace {SampleName} with the name of a sample use case that you will use to demonstrate your connector.
+4. Find the sections of the connector that say "TODO" and implement the required functionality. See
+[Build a Python connector](https://docs.microsoft.com/en-us/autonomous-systems/bonsai-connectors/guides/dedicated-connector-python) for more
+information about Bonsai connectors and step-by-step instructions for implementing one.
+5. Delete these instructions. Your users are interested in your connector--not the template that it came from. Remove this whole section from this point to the top of the file.
+
+# {SimPlatform} connector
 
 A connector for using {SimPlatform} with [Microsoft Project Bonsai](https://azure.microsoft.com/en-us/services/project-bonsai/).
 
