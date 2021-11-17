@@ -1,4 +1,4 @@
-# {SimPlatform}Connector
+# [SimPlatform]Connector
 
 > This directory will contain the source code and other files that implement the connector.
 
