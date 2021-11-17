@@ -1,7 +1,5 @@
 # [SampleName]
 
-***Replace [SampleName] with the name of your sample. A connector must have at least one sample to demonstrate that it works with Bonsai.***
-
 > Describe your sample. What is it that it simulates?
 
 ## States
