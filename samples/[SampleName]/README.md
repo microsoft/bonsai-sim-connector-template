@@ -7,6 +7,7 @@
 ## States
 
 > Describe the simulation's state variables. A table can be a good way to document this. For example:
+> 
 > | State                    | Range         | Notes |
 > | ------------------------ | ------------- | ----- |
 > | QuantityA                | [-2.4..2.4]   | Quantity of A in the hoppers. |
