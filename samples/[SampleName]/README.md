@@ -97,7 +97,7 @@ docker push <WORKSPACE_ACR_PATH>/[SampleName]-container:latest
 > If you prefer, these opererations can also be performed using your [Bonsai worspace](https://preview.bons.ai/) GUI as described
 > in [Add a training simulator to your Bonsai workspace](https://docs.microsoft.com/en-us/bonsai/guides/add-simulator?tabs=add-cli%2Ctrain-inkling&pivots=sim-platform-other).
 
-Creating a Bonsai simulator package and running training with it by:
+Create a Bonsai simulator package and run training with it by:
 
 ```
 bonsai simulator package container create -n [SampleName]-pkg -u <WORKSPACE_ACR_PATH>/[SampleName]-container:latest --max-instance-count 25 -r 1 -m 1 -p Linux
