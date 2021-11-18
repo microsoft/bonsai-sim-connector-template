@@ -2,14 +2,14 @@
 # See Image Variants at https://hub.docker.com/_/python for information about different flavors of Python containers.
 FROM python:3.7.4-slim
 
-# Set up the simulator
 WORKDIR /src
 
-# Copy simulator files to /src
-COPY . /src
+# Copy connector and sample files to image
+COPY ./connector ./connector
+COPY ./samples/[SampleName] ./samples/[SampleName]
 
 # Install simulator dependencies
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r ./connector/requirements.txt
 
 # This will be the command to run the simulator
-CMD ["python3", "main.py"]
+CMD python3 samples/ContosoUseCase/main.py

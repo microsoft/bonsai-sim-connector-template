@@ -2,9 +2,14 @@
 
 import os
 import time
+import sys
 from microsoft_bonsai_api.simulator.client import BonsaiClient, BonsaiClientConfig
 from microsoft_bonsai_api.simulator.generated.models import SimulatorInterface, SimulatorState, SimulatorSessionResponse
-from sim.simulator_model import SimulatorModel
+
+# Add parent directory containing the connector folder to path.
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
+from connector.simulator_model import SimulatorModel
 
 def main():
     """

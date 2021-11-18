@@ -1,3 +1,4 @@
+# TODO: Delete this placeholder file and replace it with your actual simulator platform runtime components.
 class Adder:
     """
     Add numbers to a running total.

@@ -85,7 +85,7 @@ In the following commands, `<SUBSCRIPTION>` and `<WORKSPACE_ACR_PATH>` should be
 [your workspace details](https://docs.microsoft.com/en-us/bonsai/cookbook/get-workspace-info):
 
 ```
-docker build -t [SampleName]-container:latest -f Dockerfile .
+docker build -t [SampleName]-container:latest -f Dockerfile ../..
 docker tag [SampleName]-container:latest <WORKSPACE_ACR_PATH>/[SampleName]-container:latest
 az acr login --subscription <SUBSCRIPTION> --name <WORKSPACE_ACR_PATH>
 docker push <WORKSPACE_ACR_PATH>/[SampleName]-container:latest

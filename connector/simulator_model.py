@@ -1,4 +1,4 @@
-from sim.adder import Adder
+from connector.adder import Adder
 from typing import NamedTuple, Dict, Any
 
 class SimulatorModel:
