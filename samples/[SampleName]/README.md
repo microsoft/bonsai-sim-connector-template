@@ -42,6 +42,8 @@ Then install the Python requirements of this sample by:
 pip install -r requirements.txt
 ```
 
+> TODO: Add a step describing additional setup required such as installing your simulator runtime or a simulator license.
+
 ### 3. Connect local instance of the simulator
 
 Run the simulator locally by:
