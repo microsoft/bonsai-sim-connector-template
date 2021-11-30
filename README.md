@@ -10,24 +10,24 @@ as a starting point for making a simulation platform work with Bonsai.
 You can use this template by:
 1. Use GitHub to [create a new repository based on this template](https://github.com/microsoft/bonsai-sim-connector-template/generate). Or
 if you don't prefer to use GitHub you make a copy of the files however you like.
-2. Find and replace [SimPlatform] with the name of the simulation platform for which you are making a connector.
-3. Find and replace [SampleName] with the name of a sample use case that you will use to demonstrate your connector.
+2. Find and replace SIM_PLATFORM with the name of the simulation platform for which you are making a connector.
+3. Find and replace SAMPLE_NAME with the name of a sample use case that you will use to demonstrate your connector.
 4. Find the sections of the connector that say "TODO" and implement the required functionality. See
 [Build a Python connector](https://docs.microsoft.com/en-us/autonomous-systems/bonsai-connectors/guides/dedicated-connector-python) for more
 information about Bonsai connectors and step-by-step instructions for implementing one.
 5. Delete these instructions. Your users are interested in your connector--not the template that it came from. Remove this whole section from this point to the top of the file.
 
-# [SimPlatform] connector
+# SIM_PLATFORM connector
 
-A connector for using [SimPlatform] with [Microsoft Project Bonsai](https://azure.microsoft.com/en-us/services/project-bonsai/).
+A connector for using SIM_PLATFORM with [Microsoft Project Bonsai](https://azure.microsoft.com/en-us/services/project-bonsai/).
 
-> TODO: Give a brief overview of the capabilities of [SimPlatform] and entice users with potential use cases for using [SimPlatform] to create Bonsai brains for controlling autonomous systems.
+> TODO: Give a brief overview of the capabilities of SIM_PLATFORM and entice users with potential use cases for using SIM_PLATFORM to create Bonsai brains for controlling autonomous systems.
 
 ## Samples
 
-[[SampleName]](samples/[SampleName]/README.md)
+[SAMPLE_NAME](samples/SAMPLE_NAME/README.md)
 
-> TODO: Describe how a user could customize the supplied sample to run a different simulation model that they created with [SimPlatform].
+> TODO: Describe how a user could customize the supplied sample to run a different simulation model that they created with SIM_PLATFORM.
 
 ## Trademarks
 

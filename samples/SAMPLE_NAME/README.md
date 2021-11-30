@@ -1,4 +1,4 @@
-# [SampleName]
+# SAMPLE_NAME
 
 > TODO: Describe your sample. What is it that it simulates?
 
@@ -20,7 +20,7 @@
 
 ## How to run the sample
 
-The following steps use the [Bonsai CLI](https://docs.microsoft.com/en-us/bonsai/cli) to test, upload the [SampleName] simulator to the Bonsai service, and train a brain.
+The following steps use the [Bonsai CLI](https://docs.microsoft.com/en-us/bonsai/cli) to test, upload the SAMPLE_NAME simulator to the Bonsai service, and train a brain.
 
 ### 1. Set up environment variables
 
@@ -60,18 +60,18 @@ The output should say `Registered simulator` followed by--every several seconds-
 While main.py continues to run, open a new commmand window and use the Bonsai CLI to create a Bonsai brain and start training by:
 
 ```
-bonsai brain create -n [SampleName]-brain
-bonsai brain version update-inkling -f machine_teacher.ink -n [SampleName]-brain
-bonsai brain version start-training -n [SampleName]-brain
-bonsai simulator unmanaged connect --simulator-name [SampleName]-sim -a Train -b [SampleName]-brain -c Concept
+bonsai brain create -n SAMPLE_NAME-brain
+bonsai brain version update-inkling -f machine_teacher.ink -n SAMPLE_NAME-brain
+bonsai brain version start-training -n SAMPLE_NAME-brain
+bonsai simulator unmanaged connect --simulator-name SAMPLE_NAME-sim -a Train -b SAMPLE_NAME-brain -c Concept
 ```
 
 The output should say `Simulators Connected: 1`. After a minute or so, you should see lots of activity in the console window that
-is running main.py and if you open your [Bonsai worspace](https://preview.bons.ai/) you should see that the brain named [SampleName]-brain
+is running main.py and if you open your [Bonsai worspace](https://preview.bons.ai/) you should see that the brain named SAMPLE_NAME-brain
 is running training episodes. We'll complete training in a faster way in the next step, so for now you can manually stop training by:
 
 ```
-bonsai brain version stop-training -n [SampleName]-brain
+bonsai brain version stop-training -n SAMPLE_NAME-brain
 ```
 
 Press Ctrl+C to stop the simulator running main.py in your first console window.
@@ -87,10 +87,10 @@ In the following commands, `<SUBSCRIPTION>` and `<WORKSPACE_ACR_PATH>` should be
 [your workspace details](https://docs.microsoft.com/en-us/bonsai/cookbook/get-workspace-info):
 
 ```
-docker build -t [SampleName]-container:latest -f Dockerfile ../..
-docker tag [SampleName]-container:latest <WORKSPACE_ACR_PATH>/[SampleName]-container:latest
+docker build -t SAMPLE_NAME-container:latest -f Dockerfile ../..
+docker tag SAMPLE_NAME-container:latest <WORKSPACE_ACR_PATH>/SAMPLE_NAME-container:latest
 az acr login --subscription <SUBSCRIPTION> --name <WORKSPACE_ACR_PATH>
-docker push <WORKSPACE_ACR_PATH>/[SampleName]-container:latest
+docker push <WORKSPACE_ACR_PATH>/SAMPLE_NAME-container:latest
 ```
 
 > NOTE: The next step uses Bonsai CLI commands.
@@ -100,11 +100,11 @@ docker push <WORKSPACE_ACR_PATH>/[SampleName]-container:latest
 Create a Bonsai simulator package and run training with it by:
 
 ```
-bonsai simulator package container create -n [SampleName]-pkg -u <WORKSPACE_ACR_PATH>/[SampleName]-container:latest --max-instance-count 25 -r 1 -m 1 -p Linux
-bonsai brain version start-training -n [SampleName]-brain --simulator-package-name [SampleName]-pkg
+bonsai simulator package container create -n SAMPLE_NAME-pkg -u <WORKSPACE_ACR_PATH>/SAMPLE_NAME-container:latest --max-instance-count 25 -r 1 -m 1 -p Linux
+bonsai brain version start-training -n SAMPLE_NAME-brain --simulator-package-name SAMPLE_NAME-pkg
 ```
 
-Next, open your [Bonsai worspace](https://preview.bons.ai/) and you should see your [SampleName]-brain brain is running training.
+Next, open your [Bonsai worspace](https://preview.bons.ai/) and you should see your SAMPLE_NAME-brain brain is running training.
 If you look in the Train tab, after a few minutes, you will see that simulators have started up and episodes are being executed.
 After approximately 200,000 iterations you should see in the training graph shows 100% goal satisfaction and 100% success rate.
 You can stop the training at this point or let training continue to run. It will eventually stop when it can no longer find improvements

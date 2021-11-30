@@ -24,7 +24,7 @@ def main():
 
 
     registration_info = SimulatorInterface(
-        name="[SampleName]-sim",
+        name="SAMPLE_NAME-sim",
         timeout=60,
         simulator_context=config_client.simulator_context,
         description=None,

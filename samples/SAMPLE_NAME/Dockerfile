@@ -6,7 +6,7 @@ WORKDIR /src
 
 # Copy connector and sample files to image
 COPY ./connector ./connector
-COPY ./samples/[SampleName] ./samples/[SampleName]
+COPY ./samples/SAMPLE_NAME ./samples/SAMPLE_NAME
 
 # Install simulator dependencies
 RUN pip3 install -r ./connector/requirements.txt
