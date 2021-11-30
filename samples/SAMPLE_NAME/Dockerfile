@@ -12,4 +12,4 @@ COPY ./samples/SAMPLE_NAME ./samples/SAMPLE_NAME
 RUN pip3 install -r ./connector/requirements.txt
 
 # This will be the command to run the simulator
-CMD python3 samples/ContosoUseCase/main.py
+CMD python3 samples/SAMPLE_NAME/main.py
