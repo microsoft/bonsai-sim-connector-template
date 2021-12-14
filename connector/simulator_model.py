@@ -25,5 +25,6 @@ class SimulatorModel:
         self.adder.add(action['addend'])
         # TODO: Return an updated simulation state dictionary from the simulation.
         # TODO: If 'sim_halted' is set to True, that indicates that the simulator is unable to continue and the
-        # episode will be discarded. If your simulator can reach an unrecoverable state, set 'sim_halted' to False.
+        # episode will be discarded. If your simulator cannot reach an unrecoverable state, always set 'sim_halted'
+        # to False.
         return { 'sim_halted': False, 'value': self.adder.value }
