@@ -1,5 +1,5 @@
 from connector.adder import Adder
-from typing import NamedTuple, Dict, Any
+from typing import Dict, Any
 
 class SimulatorModel:
     """
