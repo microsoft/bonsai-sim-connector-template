@@ -16,15 +16,21 @@ class SimulatorModel:
         # TODO: Reset state from the previous episode that needs to be cleared.
         # TODO: Perform initialization in preparation for running an episode using the values in the config dictionary.
         self.adder = Adder(config['initial_value'])
-        # TODO: Return initial episode simulation state dictionary.
-        return { 'sim_halted': False, 'value': self.adder.value }
+        return { 
+            'sim_halted': False,
+            # TODO: Add simulator state as dictionary with key as the state and value as the state's value.
+            'value': self.adder.value,
+        }
 
     def step(self, action) -> Dict[str, Any]:
         """ Apply the specified action and perform one simulation step. """
         # TODO: Perform a simulation step using the values in the action dictionary.
         self.adder.add(action['addend'])
-        # TODO: Return an updated simulation state dictionary from the simulation.
-        # TODO: If 'sim_halted' is set to True, that indicates that the simulator is unable to continue and the
-        # episode will be discarded. If your simulator cannot reach an unrecoverable state, always set 'sim_halted'
-        # to False.
-        return { 'sim_halted': False, 'value': self.adder.value }
+        return {
+            # TODO: If 'sim_halted' is set to True, that indicates that the simulator is unable to continue and the
+            # episode will be discarded. If your simulator cannot reach an unrecoverable state, always set 'sim_halted'
+            # to False.
+            'sim_halted': False,
+            # TODO: Add simulator state as dictionary with key as the state and value as the state's value.
+            'value': self.adder.value,
+        }
