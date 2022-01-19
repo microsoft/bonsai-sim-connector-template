@@ -11,6 +11,7 @@ class SimulatorModel:
         # TODO: Perform any global runtime simulator initialization that is needed here.
         pass
 
+    # <snippet_reset>
     def reset(self, config) -> Dict[str, Any]:
         """ Reset any state from the previous episode and get ready to start a new episode. """
         # TODO: Reset state from the previous episode that needs to be cleared.
@@ -21,7 +22,9 @@ class SimulatorModel:
             # TODO: Add simulator state as dictionary with key as the state and value as the state's value.
             'value': self.adder.value,
         }
+    # </snippet_reset>
 
+    # <snippet_step>
     def step(self, action) -> Dict[str, Any]:
         """ Apply the specified action and perform one simulation step. """
         # TODO: Perform a simulation step using the values in the action dictionary.
@@ -34,3 +37,4 @@ class SimulatorModel:
             # TODO: Add simulator state as dictionary with key as the state and value as the state's value.
             'value': self.adder.value,
         }
+    # </snippet_step>
