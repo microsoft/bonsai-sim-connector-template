@@ -1,3 +1,16 @@
+# IMPORTANT: **docs-snippets branch**
+
+> This docs-snippets branch of the connector template is used by the [Bonsai Connectors documentation](https://docs.microsoft.com/en-us/autonomous-systems/bonsai-connectors/).
+> Documentation pulls code snippets from the template using [Named snippets](https://docs.microsoft.com/en-us/contribute/code-in-docs#named-snippet).
+> We don't want the main branch to contain these snippets because:
+>
+> 1. They are unnecessary for users of the template, who could be confused by the extra snippet comments.
+> 2. Changes could be made to the template without awareness of how the doc snippets are used, leaving
+> 3. the docs with broken snippets or mismatched information.
+>
+> By using this branch, the snippets are frozen in time. When we do want to update the docs with an updated
+> version of the connector code, the main branch can be merged into the docs-snippets branch.
+
 # About bonsai-sim-connector-template
 
 This is a template for creating [Bonsai Connectors](https://docs.microsoft.com/en-us/autonomous-systems/bonsai-connectors). It can serve
